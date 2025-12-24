@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+
+        header {
+            background-color: #131921;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header img {
+            width: 100px;
+        }
+
+        .search-bar {
+            flex: 1;
+            margin: 0 20px;
+            display: flex;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .search-bar button {
+            padding: 8px 12px;
+            border: none;
+            background-color: #febd69;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        nav {
+            background-color: #232f3e;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #b12704;
+            font-weight: bold;
+        }
+
+        .product button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
+            background-color: #febd69;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #f3a847;
+        }
+
+        footer {
+            background-color: #131921;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://imgs.search.brave.com/dunKagnuCnOgAvSkox7elQFD6KXWYjBW7EqK1n0CVOg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9sb2dv/cy13b3JsZC5uZXQv/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MDYvQW1hem9uLUxv/Z28tNTAweDI4MS5w/bmc" alt="Amazon Logo">
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+            <button>Search</button>
+        </div>
+        <div class="account">
+            <span>Sign in</span>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Wallet</a>
+        <a href="#">Cart</a>
+        <a href="#">Account</a>
+    </nav>
+
+    <main>
+        <h2>Featured Products</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://imgs.search.brave.com/pUQtkGqOxkry31wdEAInxXfV6MuaR42y9A8b0u2KB1w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMubWVlc2hvLmNv/bS9pbWFnZXMvcHJv/ZHVjdHMvNDI4MzUx/NjI1L3F1ZjljXzUx/Mi53ZWJwP3dpZHRo/PTM2MA"Product 1">
+                <h3>Adidas</h3>
+                <p>INR 999.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71UypkUjStL._AC_UY218_.jpg" alt="Product 2">
+                <h3>Pristine Publishing</h3>
+                <p>INR 339.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71kr3WAj1FL.AC_UY218.jpg" alt="Product 3">
+                <h3>Zebronics Combo</h3>
+                <p>INR 2499.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81MmXm92HZL.AC_UL480_FMwebp_QL65.jpg"Product 1">
+                <h3>NIKE Air</h3>
+                <p>INR 2999</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61GfiZngyIL.AC_SY200.jpg" alt="Product 2">
+                <h3>Gift Hampers</h3>
+                <p>INR 259</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41IfPqJf4OL.AC_UL480_FMwebp_QL65.jpg" alt="Product 3">
+                <h3>Unisex Casual Neck Tie</h3>
+                <p>INR 459</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Amazon Clone. All Rights Reserved.
+    </footer>
+</body>
+</html>
